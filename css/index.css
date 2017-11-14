@@ -78,10 +78,14 @@ img{display:block;border:0;}
 
 #footer .footer-center{height:238px;background:lawngreen;padding-top:45px;}
 #footer .footer-help{width:592px;height:192px;background:yellow;margin-left:70px;float:left;}
-#footer .footer-call{width:192px;height:83px;background:red;float:left;margin:15px 0 0 276px;}
 #footer .footer-help .list{width:100px;float:left;margin-left:60px;}
 #footer .footer-help .list:nth-child(1){margin-left:0;}
 #footer .footer-help .list h5{font-size:16px;color:#000;}
-/*#footer .footer-help .list ul{display:inline-block;}*/
 #footer .footer-help .list ul li{padding:10px 0 ;}
 #footer .footer-help .list ul li a{font-size:12px;color:#999}
+#footer .footer-help .list ul li a:hover{color:red}
+
+#footer .footer-call{width:192px;height:83px;background:red;float:left;margin:15px 0 0 276px;}
+#footer .footer-call .kefu{width:102px;height:30px;background:#0086d1;border-radius:2px;}
+#footer .footer-call .kefu img{float:left;}
+#footer .footer-call .kefu a{float:left;}
