@@ -11,7 +11,7 @@ img { display: block; border: 0; }
 .clearfix:after { content: "."; clear: both; display: block; height: 0; overflow: hidden; visibility: hidden; }
 .clearfix { zoom: 1; }
 /*底部footer*/
-#footer { height: 472px; padding-top: 53px; }
+#footer { height: 472px; padding-top: 53px;margin-left:20px; }
 #footer .footer-top { height: 86px; border-bottom: 1px solid #DFDFDF; }
 #footer .footer-top li:first-child { margin-left: 60px; float: left; }
 #footer .footer-top li img { float: left; width: 50px; height: 50px; }

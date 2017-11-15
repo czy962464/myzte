@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	</head>
@@ -19,7 +21,55 @@
 			</ul>
 		</header>
 		<div id="main">
-			
+			<div class="main">
+				<div class="guanggao">
+					<img src="img/gg.png"/>
+				</div>
+				<div class="panel">
+					<div class="panel-head">
+						欢迎登录
+					</div>
+					<div class="panel-body">
+						<form action="index.html">
+							<div class="shuru">
+								<input type="text" placeholder="手机号/邮箱/用户名/工号" class="use"/>
+							</div>
+							<div class="shuru">
+								<input type="password" placeholder="密码" class="pwd"/>
+							</div>
+							<div class="shuru" id="yz">
+								<input type="text" class="yz" placeholder="验证码"/>
+								<div class="yz-img" style="background-color: red;"></div>
+								<button class="btn-yz">更换验证码</button>
+							</div>
+							<input type="submit" value="登录" id="sub"/>
+							<div class="formbot">
+								<div class="fengexian">
+									<img src="img/fgx.png"/>
+									<span>其他方式登录</span>
+									<img src="img/fgx.png"/>
+								</div>
+								<ul class="lianxi">
+									<li>
+										<a href="#"><img src="img/qq.png"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="img/wechat.png"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="img/weibo.png"/></a>
+									</li>
+								</ul>
+							</div>
+							<div class="group">
+								<a href="register.html" class="zc">立即注册</a>
+								<a href="#" class="wj">忘记密码?</a>
+							</div>
+						</form>
+						<div class="pduan"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!--footer底部-->
 		<div id="footer">
@@ -118,3 +168,4 @@
 		</div>
 	</body>
 </html>
+<script type="text/javascript" src="js/login.js" ></script>

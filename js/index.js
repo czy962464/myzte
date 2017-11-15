@@ -47,10 +47,10 @@
 					for(var j = 0 ; j < json[cname].list.length ; j++){
 						var product = json[cname].list[j];
 						if(j == 0 ){
-							conStr = `<li><a href="#"><img src="img/${product.src}"></a></li>`
+							conStr = `<li><a href="page.html"><img src="img/${product.src}"></a></li>`
 						}else{
 							conStr += `<li>
-											<a href="#">
+											<a href="page.html">
 												<div class="sale-img">
 													<img src="img/${product.src}"/>
 												</div>
@@ -67,6 +67,8 @@
 			}
 		})
 	}
+	
+	
 	var timer = null ;
 	timer = setInterval(autoPlay ,2000);
 	var index = 0 ;
@@ -77,7 +79,7 @@
 						.addClass("active")
    				   	  	.siblings()
    				  	    .removeClass("active");
-   		$(".banner").animate({"marginLeft":-1220*index},1000,function(){
+   		$(".banner").animate({"marginLeft":-1260*index},1000,function(){
    			if( index == 5 ){
    				$(".banner").css("margin-left",0);
  				index = 0;
@@ -95,7 +97,7 @@
 					  .addClass("active")
    				   	  .siblings()
    				  	  .removeClass("active");
-   		$(".banner").animate({"marginLeft":-1220*index},1000,function(){
+   		$(".banner").animate({"marginLeft":-1260*index},1000,function(){
    			if( index == 5 ){
    				$(".banner").css("margin-left",0);
  				index = 0;

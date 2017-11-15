@@ -28,24 +28,38 @@
 						欢迎注册
 					</div>
 					<div class="panel-body">
-						<form action="" method="post">
-							<div class="shuru">
-								<input type="text" placeholder="仅支持手机号"/>
+						<form action="login.html">
+							<div class="shuru usename">
+								<input type="text" placeholder="仅支持手机号" class="use"/>
 							</div>
 							<div class="shuru">
-								<input type="password" placeholder="仅支持手机号"/>
+								<input type="password" placeholder="登录密码" class="pwd"/>
 							</div>
 							<div class="shuru">
-								<input type="password" placeholder="仅支持手机号"/>
+								<input type="password" placeholder="再次输入登录密码" class="qpwd"/>
 							</div>
-							<div class="shuru">
-								<input type="text" placeholder="仅支持手机号"/>
+							<div class="shuru" id="yz">
+								<input type="text" class="yz" placeholder="验证码"/>
+								<div class="yz-img" style="background-color: red;"></div>
+								<button class="btn-yz">更换验证码</button>
 							</div>
-							<div class="shuru">
-								<input type="text" placeholder="仅支持手机号"/>
+							<div class="shuru" id="dx">
+								<input type="text" placeholder="短信验证码"/>
+								<button class="btn-dx">获取短信验证码</button>
 							</div>
-							<input type="submit" value="立即注册"/>
+							<input type="submit" value="立即注册" id="sub"/>
 						</form>
+						<div class="panbot">
+							已有账号？
+							<a href="login.html">立即登录</a>
+						</div>
+						<div class="pduan"></div>
+						<div class="use-yz">
+							<div class="usetit"></div>
+							<div class="arrow">
+								<img src="img/useyz.jpg"/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -147,3 +161,4 @@
 		</div>
 	</body>
 </html>
+<script src="js/require.js" data-main = "js/main.js"></script>
