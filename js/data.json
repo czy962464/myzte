@@ -1,0 +1,137 @@
+{
+	"classify001":{
+		"name" : "手机专区",
+		"list" : [
+			{
+				"id" : "shop00",
+				"src" : "0.jpg"
+			},
+			{
+				"id" : "shop01",
+				"name" : "中兴天机Axon7 A2017 顶配版 (全网通)",
+				"src" : "1.jpg",
+				"price" : "3299.0"
+			},
+			{
+				"id" : "shop02",
+				"name" : "中兴天机Axon7 MAX(全网通)",
+				"src" : "2.jpg",
+				"price" : "3299.0"
+			},
+			{
+				"id" : "shop03",
+				"name" : "中兴Blade A2S",
+				"src" : "3.jpg",
+				"price" : "699.0"
+			},
+			{
+				"id" : "shop04",
+				"name" : "ZTE中兴 Blade V8",
+				"src" : "4.jpg",
+				"price" : "1099.0"
+			},
+			{
+				"id" : "shop05",
+				"name" : "中兴A910（BA910）双卡双待手机",
+				"src" : "5.jpg",
+				"price" : "799.0"
+			},
+			{
+				"id" : "shop06",
+				"name" : "ZTE中兴小鲜5 ",
+				"src" : "6.jpg",
+				"price" : "999.0"
+			}
+		]
+	},
+	"classify002":{
+		"name" : "配件专区",
+		"list" : [
+			{
+				"id" : "pei00",
+				"src" : "p0.jpg"
+			},
+			{
+				"id" : "pei01",
+				"name" : "D1智能手表",
+				"src" : "p1.jpg",
+				"price" : "1299.0"
+			},
+			{
+				"id" : "pei02",
+				"name" : "蘑菇蓝牙音箱",
+				"src" : "p2.jpg",
+				"price" : "49.0"
+			},
+			{
+				"id" : "pei03",
+				"name" : "小球音响S201",
+				"src" : "p3.jpg",
+				"price" : "49.0"
+			},
+			{
+				"id" : "pei04",
+				"name" : "竹韵耳机",
+				"src" : "p4.jpg",
+				"price" : "79.0"
+			},
+			{
+				"id" : "pei05",
+				"name" : "10000mAh移动电源 P100 ",
+				"src" : "p5.jpg",
+				"price" : "79.0"
+			},
+			{
+				"id" : "pei06",
+				"name" : "ZTE中兴 QC2.0快充移动电源 PQ100",
+				"src" : "p6.jpg",
+				"price" : "139.0"
+			}
+		]
+	},
+	"classify003":{
+		"name" : "智能硬件",
+		"list" : [
+			{
+				"id" : "ying00",
+				"src" : "y0.jpg"
+			},
+			{
+				"id" : "ying01",
+				"name" : "Spro 2 智能微投(LTE+WIFI版 )",
+				"src" : "y1.jpg",
+				"price" : "4699.0"
+			},
+			{
+				"id" : "ying02",
+				"name" : "Spro 2 智能微投（WIFI版）",
+				"src" : "y2.jpg",
+				"price" : "3699.0"
+			},
+			{
+				"id" : "ying03",
+				"name" : "E5600 家用300M路由器",
+				"src" : "y3.jpg",
+				"price" : "199.0"
+			},
+			{
+				"id" : "ying04",
+				"name" : "小兴看看mini 智能网络摄像机",
+				"src" : "y4.jpg",
+				"price" : "169.0"
+			},
+			{
+				"id" : "ying05",
+				"name" : "MF903 旅行WiFi 三网4G",
+				"src" : "y5.jpg",
+				"price" : "489.0"
+			},
+			{
+				"id" : "ying06",
+				"name" : "MF90G 4G无线路由器 三网通用",
+				"src" : "y6.jpg",
+				"price" : "589.0"
+			}
+		]
+	}
+}

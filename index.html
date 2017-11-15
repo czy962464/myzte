@@ -6,6 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/index.js"></script>
 		<script type="text/javascript" src="js/sport5.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 	</head>
 	<body>
 		<!--top头部-->
@@ -15,8 +17,8 @@
 				<li><a href="#">企业采购</a></li>
 			</ul>
 			<ul class="ul2">
-				<li><a href="#">登录</a></li>
-              	<li><a href="#">注册</a></li>
+				<li><a href="login.html">登录</a></li>
+              	<li><a href="register.html">注册</a></li>
               	<li><a href="#" class="gwc">购物车</a></li>
 			</ul>
 		</header>
@@ -24,18 +26,97 @@
 		<div id="nav">
 			<a href="index.html"><img class="logo" src="img/zx-logo.png" alt=""/></a>
 			<ul>
-				<li><a href="index.html">首页</a></li>
-				<li><a href="#">所有商品</a></li>
-				<li><a href="#">天机系列</a></li>
-				<li><a href="#">BLADE系列</a></li>
-				<li><a href="#">微投SPRO2</a></li>
-				<li><a href="#">中兴社区</a></li>
+				<li><a href="index.html" class="aa">首页</a></li>
+				<li><a href="#" class="aa">所有商品</a></li>
+				<li class="show1">
+					<a href="#" class="aa">天机系列</a>
+					<div class="box">
+						<ul>
+							<li>
+								<a href="#">
+									<div class="nav-img">
+										<img src="img/t1.jpg"/>
+									</div>
+									<div class="nav-ms">
+										<h5>天机7s</h5>
+										<h6>￥<strong>4599.0</strong></h6>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="nav-img">
+										<img src="img/t2.jpg"/>
+									</div>
+									<div class="nav-ms">
+										<h5>天机7  顶配版</h5>
+										<h6>￥<strong>3299.0</strong></h6>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="nav-img">
+										<img src="img/t3.jpg"/>
+									</div>
+									<div class="nav-ms">
+										<h5>天机7 MAX</h5>
+										<h6>￥<strong>3299.0</strong></h6>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="show2">
+					<a href="#" class="aa">BLADE系列</a>
+					<div class="box">
+						<ul>
+							<li>
+								<a href="#">
+									<div class="nav-img">
+										<img src="img/w1.jpg"/>
+									</div>
+									<div class="nav-ms">
+										<h5>Blade V8</h5>
+										<h6>￥<strong>1099.0</strong></h6>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="nav-img">
+										<img src="img/w2.jpg"/>
+									</div>
+									<div class="nav-ms">
+										<h5>Blade A2S 3G+32G</h5>
+										<h6>￥<strong>699.0</strong></h6>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="nav-img">
+										<img src="img/w3.jpg"/>
+									</div>
+									<div class="nav-ms">
+										<h5>Blade A3 </h5>
+										<h6>￥<strong>799.0</strong></h6>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#" class="aa">微投SPRO2</a></li>
+				<li><a href="#" class="aa">中兴社区</a></li>
 			</ul>
 			<div class="search">
 				<input class="nav_txt" type="text" placeholder="天机7" />
 				<button class="nav_btn" type="button"/>
 			</div>
 		</div>
+		
 		<!--banner轮播图-->
 		<div id="banner">
 			<ul class="banner">
@@ -78,64 +159,19 @@
 					<span>中兴精品手机</span>
 				</div>
 				<div class="zx-goods">
-					<ul>
-						<li><a href="#"><img src="img/78b50c85bba4.jpg"></a></li>
-						<li>
+					<ul class="shoplist">
+						<!--<li><a href="#"><img src="img/78b50c85bba4.jpg"></a></li>-->
+						<!--<li>
 							<a href="#">
 								<div class="sale-img">
-									<img src="img/df7901bfa333.jpg"/>
+									<img src="img/1.jpg"/>
 								</div>
 								<div class="sale-miaoshu">
 									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
 									<h6>￥<strong>3299.0</strong></h6>
 								</div>
 							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
@@ -147,64 +183,43 @@
 					<span>精品手机配件</span>
 				</div>
 				<div class="zx-goods">
-					<ul>
-						<li><a href="#"><img src="img/49d420eca88d.jpg"></a></li>
+					<ul class="peijian">
+						<!--<li><a href="#"><img src="img/49d420eca88d.jpg"></a></li>
 						<li>
 							<a href="#">
 								<div class="sale-img">
-									<img src="img/df7901bfa333.jpg"/>
+									<img src="img/1.jpg"/>
 								</div>
 								<div class="sale-miaoshu">
 									<h5>D1智能手表</h5>
 									<h6>￥<strong>1299.0</strong></h6>
 								</div>
 							</a>
-						</li>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="zx-block">
+			<div class="zx-title-block">
+				<div class="zx-title-name">
+					<h4>智能硬件</h4>
+					<span>上网必备</span>
+				</div>
+				<div class="zx-goods">
+					<ul class="yingjian">
+						<!--<li><a href="#"><img src="img/49d420eca88d.jpg"></a></li>
 						<li>
 							<a href="#">
-								<div class="sale-img"></div>
+								<div class="sale-img">
+									<img src="img/1.jpg"/>
+								</div>
 								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
+									<h5>D1智能手表</h5>
+									<h6>￥<strong>1299.0</strong></h6>
 								</div>
 							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="sale-img"></div>
-								<div class="sale-miaoshu">
-									<h5>中兴天机Axon7 A2017 顶配版 (全网通)</h5>
-									<h6>￥<strong>3299.0</strong></h6>
-								</div>
-							</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
@@ -274,33 +289,39 @@
 					<div class="kefu">
 						<img src="img/kefu.png" alt="" />
 						<a href="#" target="_blank">在线客服</a>
-					</div>
+					</div><br />
+					<span>周一到周日 9:00 - 24:00 (全年无休)</span>
 				</div>
 			</div>
 			<div class="footer-bottom">
-				
+				<ul>
+					<li><a href="#" target="_blank">中兴社区</a></li>
+					<li><a href="#" target="_blank">中兴通讯</a></li>
+					<li><a href="#" target="_blank">汇天地</a></li>
+					<li><a href="#" target="_blank">中兴云服务</a></li>
+					<li><a href="#" target="_blank">中兴手机</a></li>
+				</ul>
+				<div class="copy-right">
+					<a href="#" target="_blank">服务协议</a>
+					| ©2014 - 2017 深圳市中兴智谷科技有限公司版权所有，并保留所有权利  
+				</div>
+				<div class="copy-right">
+					增值电信业务经营许可证：粤B2-20160352 | ICP备案证书号 : 
+					<a href="#" target="_blank">粤ICP备16018970号 </a> 
+				</div>
 			</div>
+		</div>
+		<div id="kf">
+			<a href="#" class="kf1">
+				<span></span>
+			</a>
+			<a href="#" class="kf2">
+				<span></span>
+			</a>
+			<a href="#" class="kf3">
+				<span></span>
+			</a>
 		</div>
 	</body>
 </html>
-<script>
-	var time = setInterval(autoPlay ,3000)
-	var small = document.getElementsByClassName("small");
-	var banner = document.getElementsByClassName("banner")[0];
-	var oli = small[0].children;
-	var index = 0 ;
-	function autoPlay(){
-		index++ ;
-		startMove( banner ,  { "left" : -index * 1220 } , function(){
-			if( index == 5 ){
-   				banner.style.left = 0;
- 				index = 0;
- 			}
-		});
-		for(var i = 0 ; i < oli.length ; i++){
-			oli[i].className = "";
-		}
-		oli[index==5 ? 0 : index].className = "active";
-	}
-	
-</script>
+<script type="text/javascript" src="js/index.js" ></script>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#top,#main{width:1262px;margin:0 auto;}
+#top{height:40px;}
+/*top左侧版块*/
+#top .ul1 { width: 322px; height: 40px; margin-left: 10px; float: left; }
+#top .ul1 li { float: left; font-size: 12px; line-height: 40px; margin-right: 20px; }
+#top .ul1 li a { color: #787878; }
+#top .ul1 li a:hover { color: #000000; }
+/*top右侧版块*/
+#top .ul2 { width: 88px; height: 40px; float: right; }
+#top .ul2 li { float: left; font-size: 12px; line-height: 40px; height: 40px; margin-right: 20px; }
+#top .ul2 li a { color: #787878; }
+#top .ul2 li a:hover { color: #000000; }
+
+/*内容区*/
+#main{height:524px;background:cyan;}
