@@ -14,7 +14,7 @@
 #top .ul2 li a:hover { color: #000000; }
 #top .ul2 li .gwc { display: block; height: 40px; background: url(../img/shopcart.png) no-repeat left 7px; padding-left: 20px; }
 /*nav版块*/
-#nav { height: 60px; padding-top: 25px; background:cyan;}
+#nav { height: 60px; padding-top: 25px;}
 #nav .logo { width: 200px; height: 31px; float: left; margin-left:20px}
 #nav ul { float: left; margin-left: 200px; }
 #nav ul li { float: left; margin-right: 30px; height: 35px; line-height: 35px; font-size: 14px; }

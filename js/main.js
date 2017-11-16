@@ -5,6 +5,7 @@ requirejs.config({
 	}
 });
 requirejs(["jquery","zc"],function($,zc){
+	$("#foot_wrap").load("public.html #footer");
 	var now = new Date();
 		now.setDate( now.getDate() + 1 );
 	var json = {};

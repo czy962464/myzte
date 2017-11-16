@@ -1,0 +1,1 @@
+$("#foot_wrap").load("public.html #footer");

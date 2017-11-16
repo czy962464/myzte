@@ -17,8 +17,10 @@
 	$(".box li").mouseleave(function(){
 		$(".box li").stop().animate({"margin-top":0},300)
 	})
+	$("#foot_wrap").load("public.html #footer");
 	//页面加载获取JSON数据
 	window.onload = function(){
+		
 		$.ajax({
 			type : "get" ,
 			url : "js/data.json",
@@ -47,10 +49,10 @@
 					for(var j = 0 ; j < json[cname].list.length ; j++){
 						var product = json[cname].list[j];
 						if(j == 0 ){
-							conStr = `<li><a href="page.html"><img src="img/${product.src}"></a></li>`
+							conStr = `<li><a href="page.html" target="_blank"><img src="img/${product.src}"></a></li>`
 						}else{
 							conStr += `<li>
-											<a href="page.html">
+											<a href="page.html?pid=${product.id}&cname=${cname}" target="_blank">
 												<div class="sale-img">
 													<img src="img/${product.src}"/>
 												</div>
@@ -67,8 +69,7 @@
 			}
 		})
 	}
-	
-	
+	//轮播图
 	var timer = null ;
 	timer = setInterval(autoPlay ,2000);
 	var index = 0 ;

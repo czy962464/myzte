@@ -1,6 +1,6 @@
 {
 	"classify001":{
-		"name" : "手机专区",
+		"name" : "手机",
 		"list" : [
 			{
 				"id" : "shop00",
@@ -9,43 +9,66 @@
 			{
 				"id" : "shop01",
 				"name" : "中兴天机Axon7 A2017 顶配版 (全网通)",
+				"title" : "ZTE中兴 天机Axon 7 A2017 顶配版 (全网通)" ,
+				"alt" : "华尔金/全网通/6GB+128GB" ,
+				"message":"双音腔立体环绕音效，6G+128G，2000万拍照，3D压力屏！",
 				"src" : "1.jpg",
-				"price" : "3299.0"
+				"price" : "3299.0",
+				"oldprice" : "4299.0"
 			},
 			{
 				"id" : "shop02",
 				"name" : "中兴天机Axon7 MAX(全网通)",
+				"title" : "ZTE中兴 天机Axon 7 MAX(全网通)3D显示" ,
+				"alt" : "华尔金/全网通/4G+64G" ,
+				"message":"天机7 MAX——科技改变”视“界，3D显示，看大片够过瘾，后置双摄，6英寸大屏，静脉指纹，全时双路HIFI，4100mAh大电池，4G+64G！",
 				"src" : "2.jpg",
-				"price" : "3299.0"
+				"price" : "2999.0",
+				"oldprice" : "3299.0"
 			},
 			{
 				"id" : "shop03",
 				"name" : "中兴Blade A2S",
+				"title" : "ZTE中兴 Blade A2S 超值大内存-3G+32G" ,
+				"alt" : "深空灰/全网通/3GB+32GB" ,
+				"message":"3G+32G超值大内存、新一代指纹解锁，5.2英寸1080P FHD屏，金属机身！",
 				"src" : "3.jpg",
 				"price" : "699.0"
 			},
 			{
 				"id" : "shop04",
 				"name" : "ZTE中兴 Blade V8",
+				"title" : "ZTE中兴 Blade V8 绝代双“焦”-后置双摄+3D拍照" ,
+				"alt" : "暗夜灰/全网通/4GB+64GB" ,
+				"message":"绝代双“焦”3D拍照、后置双摄手机，1300万柔光自拍、前置指纹、智慧语音、4G大运存+64G大内存！",
 				"src" : "4.jpg",
-				"price" : "1099.0"
+				"price" : "1099.0",
+				"oldprice" : "1499.0"
 			},
 			{
 				"id" : "shop05",
 				"name" : "中兴A910（BA910）双卡双待手机",
+				"title" : "ZTE中兴 A910（BA910）双卡双待手机" ,
+				"alt" : "铂雅银/全网通/2GB内存+16GB容量" ,
+				"message":"纤薄，活力炫彩屏，极致简雅，蓝光滤镜技术护眼不疲劳，全模式NFC，指纹识别，北斗导航，双卡盲插。",
 				"src" : "5.jpg",
-				"price" : "799.0"
+				"price" : "799.0",
+				"oldprice" : "999.0"
 			},
 			{
 				"id" : "shop06",
 				"name" : "ZTE中兴小鲜5 ",
+				"title" : "ZTE中兴 小鲜5 4G全网通" ,
+				"alt" : "暗夜灰/3GB+16GB" ,
+				"message":"中兴小鲜5,鲜享每刻! 高通骁龙MSM8917，1300万+200万后置双彩摄像头，5.0英寸2.5D弧面屏，圆润机身，时尚配色",
 				"src" : "6.jpg",
-				"price" : "999.0"
+				"price" : "999.0",
+				"oldprice" : "1299.0"
 			}
 		]
 	},
 	"classify002":{
-		"name" : "配件专区",
+		"name" : "配件",
 		"list" : [
 			{
 				"id" : "pei00",
@@ -90,7 +113,7 @@
 		]
 	},
 	"classify003":{
-		"name" : "智能硬件",
+		"name" : "硬件",
 		"list" : [
 			{
 				"id" : "ying00",
