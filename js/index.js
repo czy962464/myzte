@@ -20,7 +20,6 @@
 	$("#foot_wrap").load("public.html #footer");
 	//页面加载获取JSON数据
 	window.onload = function(){
-		
 		$.ajax({
 			type : "get" ,
 			url : "js/data.json",
@@ -116,3 +115,35 @@
 	$(".banner").mouseleave(function(){
 		timer = setInterval(autoPlay ,2000);
 	})
+	//判断购物车有多少件商品,显示数字
+	var numb = $(".fulllist").find("li").length;
+	$(".cartcount").html(numb);
+	if(numb == 0){
+		$(".cartcount").css("display","none");
+	}
+	//top版块购物车商品删除
+	$(".shopfullrem").mouseenter(function(){
+		$(this).find("a").css("color","#333");
+	}).mouseleave(function(){
+		$(this).find("a").css("color","#787878");
+	}).click(function(){
+		$(this).parent().parent().remove();
+		numb--;
+		$(".cartcount").html(numb);
+		if(numb == 0){
+			$(".cartcount").css("display","none");
+		}
+	})
+	//判断购物车是否有商品，没有显示null版块，有则显示full版块
+	$(".isgwc").mouseover(function(){
+		if(numb == 0){
+			$(".shopcart-null").css("display","block");
+		}else{
+			$(".shopcart-full").css("display","block");
+			$(".shopcart-null").css("display","none");
+		}
+	}).mouseout(function(){
+		$(".shopcart-null").css("display","none");
+		$(".shopcart-full").css("display","none");
+	})
+	

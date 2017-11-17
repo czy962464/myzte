@@ -18,3 +18,9 @@ $(".box li").mouseenter(function(){
 $(".box li").mouseleave(function(){
 	$(".box li").stop().animate({"margin-top":0},300)
 })
+for(var i = 0 ; i < $(".collist").length ; i++){
+	if(i%4==3){
+		$(".collist").eq(i).css("margin-right",0);
+	}
+}
+

@@ -20,7 +20,6 @@ $(".box li").mouseleave(function(){
 	$(".box li").stop().animate({"margin-top":0},300)
 })
 
-
 //扫码购买
 $(".buysao").mouseenter(function(){
 	$(".emwimg").stop().animate({"height":100},500)
@@ -66,7 +65,10 @@ window.onload = function(){
 		url:"http://127.0.0.1/myzte/js/data.json",
 		async:true,
 		success : function(json){
+			//获取商品信息
 			var html = "";
+			//加入购物车时获取信息
+			
 			//确定操作的数组  json[cname].list
 			for( var i = 0 ; i < json[cname].list.length ; i++ ){
 				var pro = json[cname].list[i];//每一个商品
@@ -82,6 +84,7 @@ window.onload = function(){
 								<span>￥<strong>${pro.price}</strong></span>
 								<del>￥${pro.oldprice}</del>
 							</div>`;
+					
 					break;
 				}
 			}
@@ -164,3 +167,15 @@ $(".bigimg").mouseover(function(){
 		"top" : -bigImgY
 	})
 })
+$(".buycar").click(function(){
+		var str = location.href;
+		//如果路径没有参数   ？   就说明没有传递数据
+		if( str.indexOf( "?" ) == -1){
+			return;
+		}
+		str = str.split("?")[1];//"pid=shop01&cname=classify001"
+		var arr = str.split("&");//["pid=shop01","cname=classify001"]
+		var pid = arr[0].split("=")[1];
+		var cname = arr[1].split("=")[1];
+		location.href = "http://127.0.0.1/myzte/addtoCart.html?pid="+pid+"&cname="+cname;	
+	})
