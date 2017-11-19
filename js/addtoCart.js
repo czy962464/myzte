@@ -1,4 +1,4 @@
-$("#foot_wrap").load("public.html #footer");
+$("#foot_wrap").load("public.html #publ");
 $(".default").click(function(){
 	history.go(-1);
 })
@@ -20,7 +20,7 @@ window.onload = function(){
 	//  根据pid 确定要显示的数组中哪一个商品的详情
 	$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/myzte/js/data.json",
+		url:"http://127.0.0.1/myzte/js/data2.json",
 		async:true,
 		success : function(json){
 			//获取商品信息

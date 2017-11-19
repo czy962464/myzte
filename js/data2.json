@@ -1,0 +1,219 @@
+{
+	"shop1":{
+		"name" : "手机",
+		"list" : [
+			{
+				"id" : "sj01",
+				"name" : "中兴Blade A2S",
+				"title" : "ZTE中兴 Blade A2S 超值大内存-3G+32G" ,
+				"alt" : "深空灰/全网通/3GB+32GB" ,
+				"message":"3G+32G超值大内存、新一代指纹解锁，5.2英寸1080P FHD屏，金属机身！",
+				"src" : "sj1.jpg",
+				"price" : "699.0",
+				"oldprice" : ""
+			},
+			{
+				"id" : "sj02",
+				"name" : "ZTE中兴 Blade V8",
+				"title" : "ZTE中兴 Blade V8 绝代双“焦”-后置双摄+3D拍照" ,
+				"alt" : "暗夜灰/全网通/4GB+64GB" ,
+				"message":"绝代双“焦”3D拍照、后置双摄手机，1300万柔光自拍、前置指纹、智慧语音、4G大运存+64G大内存！",
+				"src" : "sj2.jpg",
+				"price" : "1099.0",
+				"oldprice" : "1499.0"
+			},
+			{
+				"id" : "sj03",
+				"name" : "中兴 Blade A3",
+				"title" : "ZTE中兴 Blade A3 国民长续航 双摄大内存" ,
+				"alt" : "曜石黑/全网通/3GB+32GB" ,
+				"message":"4000mAh国民长续航 前置柔光双摄 人脸识别 3+32G大内存",
+				"src" : "sj3.jpg",
+				"price" : "799.0"
+			},
+			{
+				"id" : "sj04",
+				"name" : "中兴天机Axon7 MAX(全网通)",
+				"title" : "ZTE中兴 天机Axon 7 MAX(全网通)3D显示" ,
+				"alt" : "华尔金/全网通/4G+64G" ,
+				"message":"天机7 MAX——科技改变”视“界，3D显示，看大片够过瘾，后置双摄，6英寸大屏，静脉指纹，全时双路HIFI，4100mAh大电池，4G+64G！",
+				"src" : "sj4.jpg",
+				"price" : "2999.0",
+				"oldprice" : "3299.0"
+			},
+			{
+				"id" : "sj05",
+				"name" : "中兴天机Axon7 A2017 (全网通)",
+				"title" : "ZTE中兴 天机7 A2017(全网通)" ,
+				"alt" : "华尔金/全网通/6GB+128GB" ,
+				"message":"5.5英寸2K屏，骁龙820，HiFi双芯片+双音腔+立体环绕，荣获IFA“音效突破智能手机”奖！",
+				"src" : "sj5.jpg",
+				"price" : "3299.0",
+				"oldprice" : "4299.0"
+				
+			},
+			{
+				"id" : "sj06",
+				"title" : "ZTE中兴 V7 MAX" ,
+				"alt" : "典雅金/电信版" ,
+				"message":"5.5英寸FHD高清大屏，配备2.5D弧面玻璃，侧面指纹识别，并拥有0.3s瞬时解锁、指纹加密、指纹支付三大功能！",
+				"src" : "sj6.jpg",
+				"price" : "1799.0"
+			},
+			{
+				"id" : "sj07",
+				"name" : "ZTE中兴小鲜5 ",
+				"title" : "ZTE中兴 小鲜5 4G全网通" ,
+				"alt" : "暗夜灰/3GB+16GB" ,
+				"message":"中兴小鲜5,鲜享每刻! 高通骁龙MSM8917，1300万+200万后置双彩摄像头，5.0英寸2.5D弧面屏，圆润机身，时尚配色",
+				"src" : "sj7.jpg",
+				"price" : "999.0",
+				"oldprice" : "1299.0"
+			},
+			{
+				"id" : "sj08",
+				"title" : "ZTE中兴 V870 行业版" ,
+				"alt" : "丝凝灰-ZTE专用版" ,
+				"src" : "sj8.jpg",
+				"price" : "2799.0"
+			},
+			{
+				"id" : "sj09",
+				"title" : "ZTE中兴 天机7 MAX 行业版" ,
+				"alt" : "华尔金-ZTE专用版" ,
+				"src" : "sj9.jpg",
+				"price" : "3599.0"
+			},
+			{
+				"id" : "sj10",
+				"title" : "ZTE中兴 天机7s ZTE专用版" ,
+				"alt" : "华尔金-ZTE专用版" ,
+				"message":"政企专享版，国家级安全加密（窃听风云），高保真双扬声器，2000W+1200W双彩摄像头，骁龙821处理器，给尊者的礼物",
+				"src" : "sj10.jpg",
+				"price" : "4599.0"
+			},
+			{
+				"id" : "sj11",
+				"title" : "ZTE中兴 Blade A2 国民指纹手机 双卡双待" ,
+				"alt" : "全网通/珍珠银" ,
+				"message":"中兴Blade A2国民指纹手机，纤薄金属机身，指纹（支付+5指启动），2.5D弧面屏。",
+				"src" : "sj11.jpg",
+				"price" : "699.0"
+			},
+			{
+				"id" : "sj12",
+				"title" : "ZTE中兴 AXON天机 MAX C2016（全网通）" ,
+				"alt" : "公开版" ,
+				"message":"AXON天机MAX 3G+32G（电信定制全网通公开版）, 6英寸2.5D AMOLED炫彩，4140毫安 快充，OTG反充，后1600万+前1300万，金属机身！",
+				"src" : "sj12.jpg",
+				"price" : "1199.0",
+				"oldprice" : "2799.0"
+			},
+			{
+				"id" : "sj13",
+				"name" : "中兴A910（BA910）双卡双待手机",
+				"title" : "ZTE中兴 A910（BA910）双卡双待手机" ,
+				"alt" : "铂雅银/全网通/2GB内存+16GB容量" ,
+				"message":"纤薄，活力炫彩屏，极致简雅，蓝光滤镜技术护眼不疲劳，全模式NFC，指纹识别，北斗导航，双卡盲插。",
+				"src" : "sj13.jpg",
+				"price" : "799.0",
+				"oldprice" : "11299.0"
+			}
+		]
+	},
+	"shop2":{
+		"name" : "配件",
+		"list" : [
+			{
+				"id" : "pei01",
+				"name" : "D1智能手表",
+				"title":"ZTE中兴 D1智能手表 商务金属质感",
+				"src" : "p1.jpg",
+				"price" : "1299.0"
+			},
+			{
+				"id" : "pei02",
+				"name" : "蘑菇蓝牙音箱",
+				"title":"ZTE中兴 蘑菇蓝牙音箱 XBS06 吸盘设计",
+				"src" : "p2.jpg",
+				"price" : "49.0"
+			},
+			{
+				"id" : "pei03",
+				"name" : "小球音响S201",
+				"title":"ZTE中兴 小球音箱 S201 一插即听 小巧便携",
+				"src" : "p3.jpg",
+				"price" : "49.0"
+			},
+			{
+				"id" : "pei04",
+				"name" : "竹韵耳机",
+				"title":"ZTE中兴 竹韵耳机 SOH3506 重低音立体声（美标）",
+				"src" : "p4.jpg",
+				"price" : "79.0"
+			},
+			{
+				"id" : "pei05",
+				"name" : "10000mAh移动电源 P100 ",
+				"title":"10000mAh移动电源 P100",
+				"src" : "p5.jpg",
+				"price" : "79.0"
+			},
+			{
+				"id" : "pei06",
+				"name" : "ZTE中兴 QC2.0快充移动电源 PQ100",
+				"title":"ZTE中兴 QC2.0快充移动电源 PQ100",
+				"src" : "p6.jpg",
+				"price" : "139.0"
+			}
+		]
+	},
+	"shop3":{
+		"name" : "硬件",
+		"list" : [
+			{
+				"id" : "ying01",
+				"name" : "Spro 2 智能微投(LTE+WIFI版 )",
+				"title":"ZTE中兴 Spro 2 智能微投（LTE+WIFI版）",
+				"src" : "y1.jpg",
+				"price" : "4699.0"
+			},
+			{
+				"id" : "ying02",
+				"name" : "Spro 2 智能微投（WIFI版）",
+				"title":"ZTE中兴 Spro 2 智能微投（WIFI版）",
+				"src" : "y2.jpg",
+				"price" : "3699.0"
+			},
+			{
+				"id" : "ying03",
+				"name" : "E5600 家用300M路由器",
+				"title":"ZTE中兴 E5600家用300M路由器 四天线 企业路由器",
+				"src" : "y3.jpg",
+				"price" : "199.0"
+			},
+			{
+				"id" : "ying04",
+				"name" : "小兴看看mini 智能网络摄像机",
+				"title":"ZTE中兴 小兴看看mini 智能网络摄像机",
+				"src" : "y4.jpg",
+				"price" : "169.0"
+			},
+			{
+				"id" : "ying05",
+				"name" : "MF903 旅行WiFi 三网4G",
+				"title":"ZTE中兴 MF903 旅行WiFi 5200mAh大电池 三网4G",
+				"src" : "y5.jpg",
+				"price" : "489.0"
+			},
+			{
+				"id" : "ying06",
+				"name" : "MF90G 4G无线路由器 三网通用",
+				"title":"ZTE中兴 MF90G 4G无线路由器 三网通用",
+				"src" : "y6.jpg",
+				"price" : "589.0"
+			}
+		]
+	}
+}
+

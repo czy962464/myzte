@@ -1,4 +1,4 @@
-$("#foot_wrap").load("public.html #footer");
+$("#foot_wrap").load("public.html #publ");
 $(".show1").mouseenter(function(){
 	$(".show1 .box").show()
 }).mouseleave(function(){

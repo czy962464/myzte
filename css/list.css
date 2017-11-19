@@ -55,7 +55,7 @@
 
 /*内容区1*/
 #defaultt{background:#F5F5F5;}
-#default{background:cyan;width:1230px;margin:0 auto;padding:15px 0;border: 1px solid #ddd;}
+#default{background:#fff;width:1230px;margin:0 auto;padding:15px 0;border: 1px solid #ddd;}
 #default .gnav{margin-bottom: 0;min-height: 24px;max-height: 48px;line-height: 24px;overflow: hidden;}
 #default .gnav dt{float:left;width: 65px;color: #666;line-height: 24px;text-align: left;font-size:14px;}
 #default .gnav dd{float:left;}
@@ -76,15 +76,29 @@
 #goods .goodinner .switch a .iconcolor{color:#fc6628;}
 /*内容区3*/
 .goodlist{width:1230px;margin:0 auto;min-height:1px;}
-.goodlist .collist{padding: 0 !important;width: 297px;margin-right: 14px;position:relative;float:left;}
-.goodlist .collist .colitem{padding: 4px 15px;position: relative;background:#fff;border: 1px solid #ddd;margin-bottom: 13px;cursor: pointer;}
+.goodlist .collist{width: 297px;margin-right: 14px;position:relative;float:left;}
+.goodlist .collist .colitem{padding:4px 15px;margin-top:5px;position: relative;background:#fff;border: 1px solid #ddd;margin-bottom: 13px;cursor: pointer;}
 .goodlist .collist .colitem .colimg{padding: 10px 0;padding-top: 44px;padding-bottom: 27px;width: 210px;height: 180px; margin: auto;overflow: hidden;}
 .goodlist .collist .colitem .colimg img{max-width:210px;max-height:100%;margin:auto;}
 .goodlist .collist .colitem .caption h3{font-size:14px;line-height:18px;text-align: center;height: 36px;overflow: hidden;margin-bottom: 10px;margin-top: 0;}
 .goodlist .collist .colitem .caption h3 a{color:#787878}
-.goodlist .collist .colitem .caption ul{text-align: center;margin-bottom: 20px;color:#333;font-size:14px;}
+.goodlist .collist .colitem .caption ul{text-align: center;margin-bottom: 20px;color:#333;font-size:12px;}
+.goodlist .collist .colitem .caption ul li:first-child{color:#fc6822}
+.goodlist .collist .colitem .caption ul li{display:inline-block}
 /*内容区4*/
 .pagina{margin:0 auto;padding: 42px 0 116px 0;width:288px;}
-.pagina li{float:left;width:48px;height:30px;text-align:center;}
+.pagina li{float:left;width:48px;height:30px;text-align:center;line-height:30px;}
 .pagina li a{color:#757575;font-size:14px;line-height:30px;}
 .pagina li img{margin:6px 0 0 12px;}
+.yema{background:#5A5453;color:#fff;}
+/**/
+.goodlist .thnumb a{color:#333}
+.goodlist .thnumb{border-top: 1px solid #ddd;position:relative;background:#fff;display:block;padding:4px;height:192px;}
+.goodlist .thnumb .giimg{height: 140px;padding:15px;width:270px;float:left;}
+.goodlist .thnumb .giimg img{max-height:100%;display: block;max-width: 100%;margin: auto;}
+.goodlist .thnumb .giname{width:480px;height:108px;float:left;text-align: left;padding: 15px;overflow:hidden;}
+.goodlist .thnumb .giname h3{font-size: 18px;line-height: 18px;height: 18px;overflow: hidden;margin:20px 0 10px;}
+.goodlist .thnumb .giname p{margin-top: 0;font-size: 14px;width: 100%;height: 60px;overflow: hidden;color: #767676;}
+.goodlist .thnumb .giprice{text-align: left;padding: 40px 15px;width:16.67%;float:left;}
+.goodlist .thnumb .giprice li{display: inline-block;padding-right: 5px;padding-left: 5px;color:#A94442}
+.goodlist .thnumb:first-child{border:0};

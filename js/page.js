@@ -1,4 +1,4 @@
-$("#foot_wrap").load("public.html #footer");
+$("#foot_wrap").load("public.html #publ");
 //导航栏效果
 $(".show1").mouseenter(function(){
 	$(".show1 .box").show()
@@ -57,12 +57,11 @@ window.onload = function(){
 	var arr = str.split("&");//["pid=shop01","cname=classify001"]
 	var pid = arr[0].split("=")[1];
 	var cname = arr[1].split("=")[1];
-	
 	//请求ajax  获取数据  根据cname确定要遍历的数组
 	//  根据pid 确定要显示的数组中哪一个商品的详情
 	$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/myzte/js/data.json",
+		url:"js/data2.json",
 		async:true,
 		success : function(json){
 			//获取商品信息

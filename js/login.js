@@ -1,4 +1,4 @@
-$("#foot_wrap").load("public.html #footer");
+$("#foot_wrap").load("public.html #publ");
 //页面加载显示验证码
 $(".yz-img").html( yzm() );
 //点击更换验证码

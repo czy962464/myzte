@@ -62,7 +62,7 @@
 #nav .box ul li:nth-child(3) .nav-img{border:0}
 /*内容版块*/
 .zx-block1 { height: 395px; margin-left:20px;}
-.zx-block { height: 696px;margin-left:20px;}
+.zx-block { height: 696px;margin-left:20px;overflow:hidden;}
 .zx-title-block { height: 82px; }
 .zx-title-name { width: 177px; height: 82px; }
 .zx-title-name span { float: left; font-size: 12px; margin: 37px 0 0 6px; }
@@ -72,9 +72,9 @@
 .zx1 { float: left; width: 606px; height: 313px; }
 .zx1 img:hover { border-color: #000000; }
 /*手机专区*/
-.zx-goods { height: 604px;}
-.zx-goods ul li:nth-of-type(1) { height: 602px; width: 305px; }
-.zx-goods ul li { border: 1px solid #ccc; width: 302px; height: 300px; float: left; }
+.zx-goods{height: 604px;overflow:hidden;}
+.zx-goods ul li:nth-of-type(1) { height: 602px; width: 305px;}
+.zx-goods ul li { border: 1px solid #ccc; width: 302px; height: 300px; float: left;}
 .zx-goods ul li .sale-img { width: 180px; height: 180px; margin: auto; background: cyan; }
 .zx-goods ul li .sale-img img { width: 100%; height: 100%; }
 .zx-goods ul li .sale-miaoshu { margin-top: 22px; width: 302px; height: 98px; }

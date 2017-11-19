@@ -17,50 +17,50 @@
 	$(".box li").mouseleave(function(){
 		$(".box li").stop().animate({"margin-top":0},300)
 	})
-	$("#foot_wrap").load("public.html #footer");
+	$("#foot_wrap").load("public.html #publ");
 	//页面加载获取JSON数据
 	window.onload = function(){
 		$.ajax({
 			type : "get" ,
-			url : "js/data.json",
+			url : "js/data2.json",
 			async : true ,
 			success : function(json){
-				var title = "" ;
 				var conStr = "" ;
 				//JSON数据位置
 				for(var i = 1 ; i < 4 ; i++){
 					if(i == 1){
-						cname = "classify00" + i;
+						conStr = "";
+						cname = "shop" + i;
 						aa();
-						$(".shoplist").html(conStr);
+						$(".shoplist").append(conStr);
 					}else if(i == 2){
-						cname = "classify00" + i;
+						conStr = "";
+						cname = "shop" + i;
 						aa();
-						$(".peijian").html(conStr);
+						$(".peijian").append(conStr);
 					}else if(i == 3){
-						cname = "classify00" + i;
+						conStr = "";
+						cname = "shop" + i;
 						aa();
-						$(".yingjian").html(conStr);
+						$(".yingjian").append(conStr);
 					}
 				}
 				//添加数据
 				function aa(){
 					for(var j = 0 ; j < json[cname].list.length ; j++){
 						var product = json[cname].list[j];
-						if(j == 0 ){
-							conStr = `<li><a href="page.html" target="_blank"><img src="img/${product.src}"></a></li>`
-						}else{
+						if(product.name){
 							conStr += `<li>
-											<a href="page.html?pid=${product.id}&cname=${cname}" target="_blank">
-												<div class="sale-img">
-													<img src="img/${product.src}"/>
-												</div>
-												<div class="sale-miaoshu">
-													<h5>${product.name}</h5>
-													<h6>￥<strong>${product.price}</strong></h6>
-												</div>
-											</a>
-										</li>`
+										<a href="page.html?pid=${product.id}&cname=${cname}" target="_blank">
+											<div class="sale-img">
+												<img src="img/${product.src}"/>
+											</div>
+											<div class="sale-miaoshu">
+												<h5>${product.name}</h5>
+												<h6>￥<strong>${product.price}</strong></h6>
+											</div>
+										</a>
+									</li>`;
 						}
 						
 					}
