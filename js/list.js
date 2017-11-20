@@ -18,6 +18,22 @@ $(".box li").mouseenter(function(){
 $(".box li").mouseleave(function(){
 	$(".box li").stop().animate({"margin-top":0},300)
 })
+$(".allfenlei li").click(function(){
+	
+	$(this).find("a")
+			.addClass("active")
+			.end()
+			.siblings()
+			.find("a")
+			.removeClass("active")
+			
+});
+//var allindex = 0 ;
+//$(".allfenlei li").eq(3).click(function(){
+//	allindex = $(this).index();
+//	alert(allindex)
+//})
+
 show();
 //切换视图
 var sindex = 0 ;
@@ -33,6 +49,9 @@ $(".moren").click(function(){
 		.removeClass("teshu");
 })
 $(".moren").eq(0).click(function(){
+	show();
+})
+$(".allfenlei li").eq(0).click(function(){
 	show();
 })
 function show(){
@@ -54,20 +73,20 @@ function show(){
 				for(var i = 0; i < json[attr].list.length ; i++){
 					var product = json[attr].list[i];
 					str += `<div class="collist">
-						<a href="page.html?pid=${product.id}&cname=${attr}">
-							<div class="colitem">
-								<div class="colimg">
-									<img src="img/${product.src}"/>
-								</div>
-								<div class="caption">
-									<h3><a href="#">${product.title}</a></h3>
-									<ul>
-										<li>¥${product.price}</li>
-									</ul>
-								</div>
-							</div>
-						</a>
-					</div>`;
+								<a href="page.html?pid=${product.id}&cname=${attr}">
+									<div class="colitem">
+										<div class="colimg">
+											<img src="img/${product.src}"/>
+										</div>
+										<div class="caption">
+											<h3><a href="#">${product.title}</a></h3>
+											<ul>
+												<li>¥${product.price}</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+							</div>`;
 					ctr += `<div class="thnumb">
 								<a href="page.html?pid=${product.id}&cname=${attr}">
 									<div class="giimg">
@@ -91,6 +110,56 @@ function show(){
 			}else{
 				$(".goodlist").html(ctr);
 			}
+			$(".allfenlei li").click(function(){
+				var allindex = $(this).index();
+				var aname = "shop" + allindex ;
+				var astr = "";
+				var actr = "" ;
+				for( var i = 0; i < json[aname].list.length; i++ ){
+					var product = json[aname].list[i];//一个商品对象
+					astr += `<div class="collist">
+								<a href="page.html?pid=${product.id}&cname=${attr}">
+									<div class="colitem">
+										<div class="colimg">
+											<img src="img/${product.src}"/>
+										</div>
+										<div class="caption">
+											<h3><a href="#">${product.title}</a></h3>
+											<ul>
+												<li>¥${product.price}</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+							</div>`;
+					actr += `<div class="thnumb">
+								<a href="page.html?pid=${product.id}&cname=${attr}">
+									<div class="giimg">
+										<img src="img/${product.src}"/>
+									</div>
+									<div class="giname">
+										<h3>${product.title}</h3>
+										<p>${product.message}</p>
+									</div>
+									<div class="giprice">
+										<ul>
+											<li>¥${product.price}</li>
+										</ul>
+									</div>
+								</a>
+							</div>`;
+				}
+				if(sindex == 0){
+					$(".goodlist").html(astr);
+				}else{
+					$(".goodlist").html(actr);
+				}
+				for(var j = 0 ; j < $(".collist").length ; j++){
+					if(j%4==3){
+						$(".collist").eq(j).css("margin-right",0);
+					}
+				}
+			})
 			for(var j = 0 ; j < $(".collist").length ; j++){
 				if(j%4==3){
 					$(".collist").eq(j).css("margin-right",0);

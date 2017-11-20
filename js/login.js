@@ -26,6 +26,10 @@ $(".yz").blur(function(){
 
 $("form").submit(function(){
 	if( flagYz && login_yz()){
+		var json1 = {};
+		json1.username = $(".use").val();
+		json1.userpwd = $(".pwd").val();
+		document.cookie = "userlist=" + JSON.stringify( json1 ) + ";expires=" + now;
 		return true;
 	}else{
 		if(!flagYz){

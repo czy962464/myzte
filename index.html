@@ -16,8 +16,21 @@
 				<li><a href="#">企业采购</a></li>
 			</ul>
 			<ul class="ul2">
-				<li><a href="login.html">登录</a></li>
-              	<li><a href="register.html">注册</a></li>
+				<li class="is-login">
+					<a href="#">欢迎您
+						<strong class="usname"></strong>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">会员中心</a></li>
+						<li><a href="#">我的优惠券</a></li>
+						<li><a href="#">我的购物车</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">会员中心</a></li>
+					</ul>
+				</li>
+				<li class="hidden"><a href="login.html">登录</a></li>
+              	<li class="hidden"><a href="register.html">注册</a></li>
               	<li class="isgwc">
               		<a href="addCart.html" class="gwc">
               			购物车
@@ -61,7 +74,7 @@
 			<a href="index.html"><img class="logo" src="img/zx-logo.png" alt=""/></a>
 			<ul>
 				<li><a href="index.html" class="aa">首页</a></li>
-				<li><a href="#" class="aa">所有商品</a></li>
+				<li><a href="list.html" class="aa">所有商品</a></li>
 				<li class="show1">
 					<a href="#" class="aa">天机系列</a>
 					<div class="box">
@@ -150,7 +163,14 @@
 				<button class="nav_btn" type="button"/>
 			</div>
 		</div>
-		
+		<div id="LoutiNav">
+			<ul>
+				<li>手机专区</li>
+				<li>配件专区</li>
+				<li>智能硬件</li>
+				<li class="last">Top</li>
+			</ul>
+		</div>
 		<!--banner轮播图-->
 		<div id="banner">
 			<ul class="banner">
@@ -262,6 +282,7 @@
 			<a href="#"><img src="img/c77d645d4b8e.jpg"/></a>
 		</div>
 		<div id="foot_wrap"></div>
+		
 	</body>
 </html>
 <script type="text/javascript" src="js/index.js" ></script>

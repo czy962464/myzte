@@ -8,8 +8,27 @@
 #top .ul1 li a { color: #787878; }
 #top .ul1 li a:hover { color: #000000; }
 /*top右侧版块*/
-#top .ul2 { width: 170px; height: 40px; float: right; }
+#top .ul2 { width: 230px; height: 40px; float: right; }
 #top .ul2 li { float: left; font-size: 12px; line-height: 40px; height: 40px; margin-right: 20px; }
+
+#top .ul2 .is-login{display:none;}
+#top .ul2 .is-login .caret{display: inline-block;width: 1px; height:2px;margin-left: 2px;vertical-align: middle;border-top: 4px dashed;border-right: 4px solid transparent;border-left: 4px solid transparent;}
+.dropdown-menu{position: absolute;
+    top: 7%;
+    z-index: 1000;
+    float: left;
+    max-width: 130px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    box-shadow: 0 6px 12px}
+.dropdown-menu li{text-align: center;width: 120px;display: block !important;height:40px;line-height: 40px;}
 #top .ul2 li a { color: #787878; }
 #top .ul2 li a:hover { color: #000000; }
 #top .ul2 li .gwc {position: relative; display: block; height: 40px; background: url(../img/shopcart.png) no-repeat left 7px; padding-left: 20px; }
@@ -33,7 +52,7 @@
 #top .ul2 li .shopcart-full .fulllist li .shopprice .shopfullrem{margin-top: 10px;text-align: right;height:40px;line-height:40px;}
 #top .ul2 li .shopcart-full .fulllist li .shopprice .shopfullrem a{padding: 0 10px;font-size:12px;color: #787878;margin-top:10px;margin-left:10px;line-height: normal;display: inline-block;}
 /*nav版块*/
-#nav { height: 60px; padding-top: 25px;}
+#nav { height: 60px; padding-top: 25px;background:#fff;}
 #nav .logo { width: 200px; height: 31px; float: left; margin-left:20px}
 #nav ul { float: left; margin-left: 200px; }
 #nav ul li { float: left; margin-right: 30px; height: 35px; line-height: 35px; font-size: 14px; }
@@ -84,3 +103,9 @@
 /*专区广告*/
 .zx-ad-banner { height: 120px; }
 .zx-ad-banner img { width: 100%; height: 100%; }
+/*楼梯*/
+#LoutiNav{position: fixed;top: 70%;left: 40px;width:70px;border: 1px solid ;background:#fff;}
+#LoutiNav ul li{position:relative;width:70px;height:30px;list-style:none;text-align:center;line-height: 30px;font-size: 12px;cursor: pointer;border-bottom: 1px dotted #AAAAAA;}
+#LoutiNav ul li.last {background: darkred;color: white;border-bottom: none;}
+#LoutiNav ul li:hover{background: darkred;color: white;}
+.louactive{background: darkred;}

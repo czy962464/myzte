@@ -17,9 +17,43 @@
 	$(".box li").mouseleave(function(){
 		$(".box li").stop().animate({"margin-top":0},300)
 	})
-	$("#foot_wrap").load("public.html #publ");
+	
+	//吸顶效果
+	$(window).scroll(function(){
+		var h = 40 ;
+		var stop = $(document).scrollTop();
+		var floor = $(".zx-block").filter(function(){
+			return Math.abs( $(this).offset().top - stop ) < $(this).outerHeight()/2 ;
+		})
+		var louindex = floor.index();
+		/*$(this).addClass("louactive")
+				.siblings()
+				.removeClass("louactive")*/
+		$("#LoutiNav li").eq(louindex-5).addClass("louactive")
+				.siblings()
+				.removeClass("louactive")
+		if(louindex==-1){
+			$("#LoutiNav li").removeClass("louactive")
+		}
+		if(stop > h){
+			$("#nav").css({"position":"fixed","top":0,"z-index":999});
+		}else{
+			$("#nav").css("position","");
+		}
+	});
+	$(".last").click(function(){
+		$("body,html").animate( {scrollTop : 0 },1000);
+	})
+	$("#LoutiNav li").click(function(){
+		var index = $(this).index();
+		
+		var _top = $(".zx-block").eq(index).offset().top;
+		$("body,html").animate({"scrollTop":_top-85},1000)
+	})
 	//页面加载获取JSON数据
 	window.onload = function(){
+		
+		$("#foot_wrap").load("public.html #publ");
 		$.ajax({
 			type : "get" ,
 			url : "js/data2.json",
@@ -68,6 +102,17 @@
 			}
 		})
 	}
+	
+	if(document.cookie){
+		var str = document.cookie;
+		var arr  = str.split("=");
+		var usname =  JSON.parse(arr[1]).username;
+		$(".is-login").css("display","block")
+		$(".is-login .usname").html(usname);
+		$(".hidden").css("display","none");
+	}
+	
+		
 	//轮播图
 	var timer = null ;
 	timer = setInterval(autoPlay ,2000);
