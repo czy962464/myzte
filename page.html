@@ -10,15 +10,64 @@
 	</head>
 	<body>
 		<!--top头部-->
+		<!--top头部-->
 		<header id="top">
 			<ul class="ul1">
 				<li><a href="#">手机版</a></li>
 				<li><a href="#">企业采购</a></li>
 			</ul>
 			<ul class="ul2">
-				<li><a href="login.html">登录</a></li>
-              	<li><a href="register.html">注册</a></li>
-              	<li><a href="#" class="gwc">购物车</a></li>
+				<li class="is-login">
+					<a href="#">欢迎您
+						<strong class="usname"></strong>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">会员中心</a></li>
+						<li><a href="#">我的优惠券</a></li>
+						<li><a href="#">我的购物车</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">退出登录</a></li>
+					</ul>
+				</li>
+				<li class="hidden"><a href="login.html">登录</a></li>
+              	<li class="hidden"><a href="register.html">注册</a></li>
+              	<li class="isgwc">
+              		<a href="addCart.html" class="gwc">
+              			购物车
+              			<span class="cartcount">1</span>
+              		</a>
+              		<div class="shopcart-null">
+              			<div class="remind">
+              				购物车中还没有商品,快快选购吧!
+              				<img src="img/smile.png"/>
+              			</div>
+              		</div>
+              		<div class="shopcart-full">
+              			<ul class="fulllist">
+              				<!--<li>
+              					<a href="page.html" class="shopfull" target="_blank">
+              						<div class="shopfullimg">
+              							<img src="img/pagem1.jpg"/>
+              						</div>
+              						<div class="shopfullname">
+              							ZTE中兴 天机Axon 7 MAX(全网通)3D显示
+              							<br />
+              							华尔金/全网通/4G+64G
+              						</div>
+              					</a>
+              					<div class="shopprice">
+              						<div class="shopfullpre">
+              							<span>￥2999.0</span>
+              						</div>
+              						<div class="shopfullrem">
+              							<a href="#">删除</a>
+              						</div>
+              					</div>
+              				</li>-->
+              			</ul>
+              		</div>
+              	</li>
 			</ul>
 		</header>
 		<!--nav导航-->

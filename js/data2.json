@@ -165,6 +165,34 @@
 				"title":"ZTE中兴 QC2.0快充移动电源 PQ100",
 				"src" : "p6.jpg",
 				"price" : "139.0"
+			},
+			{
+				"id" : "ej01",
+				"name" : "小球音响S201",
+				"title":"ZTE中兴 小球音箱 S201 一插即听 小巧便携",
+				"src" : "p3.jpg",
+				"price" : "49.0"
+			},
+			{
+				"id" : "ej02",
+				"name" : "竹韵耳机",
+				"title":"ZTE中兴 竹韵耳机 SOH3506 重低音立体声（美标）",
+				"src" : "p4.jpg",
+				"price" : "79.0"
+			},
+			{
+				"id" : "ej03",
+				"name" : "10000mAh移动电源 P100 ",
+				"title":"10000mAh移动电源 P100",
+				"src" : "p5.jpg",
+				"price" : "79.0"
+			},
+			{
+				"id" : "ej04",
+				"name" : "ZTE中兴 QC2.0快充移动电源 PQ100",
+				"title":"ZTE中兴 QC2.0快充移动电源 PQ100",
+				"src" : "p6.jpg",
+				"price" : "139.0"
 			}
 		]
 	},

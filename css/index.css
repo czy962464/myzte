@@ -1,5 +1,6 @@
 @charset "UTF-8";
-#top, #nav, #banner, .zx-block1, .zx-block, .zx-ad-banner, #footer { width: 1260px; margin: 0 auto; }
+#top, #nav, #banner,  .zx-ad-banner, #footer { width: 1260px; margin: 0 auto; }
+.zx-block1, .zx-block{ width: 1230px; margin: 0 auto;}
 /*top版块*/
 #top { height: 40px; background: #f8f8f8; }
 /*top左侧版块*/
@@ -13,21 +14,8 @@
 
 #top .ul2 .is-login{display:none;}
 #top .ul2 .is-login .caret{display: inline-block;width: 1px; height:2px;margin-left: 2px;vertical-align: middle;border-top: 4px dashed;border-right: 4px solid transparent;border-left: 4px solid transparent;}
-.dropdown-menu{position: absolute;
-    top: 7%;
-    z-index: 1000;
-    float: left;
-    max-width: 130px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 2px;
-    box-shadow: 0 6px 12px}
+.dropdown-menu{display:none;position: absolute;top:40px;z-index: 1000;float: left; max-width: 130px;padding: 5px 0;margin: 2px 0 0;font-size: 14px;text-align: left;list-style: none;background-color: #fff;background-clip: padding-box;border: 1px solid rgba(0,0,0,.15);border-radius: 2px;box-shadow: 0 6px 12px}
+.dropdown-menu:hover{color:#333;}
 .dropdown-menu li{text-align: center;width: 120px;display: block !important;height:40px;line-height: 40px;}
 #top .ul2 li a { color: #787878; }
 #top .ul2 li a:hover { color: #000000; }
@@ -82,8 +70,8 @@
 /*内容版块*/
 .zx-block1 { height: 395px; margin-left:20px;}
 .zx-block { height: 696px;margin-left:20px;overflow:hidden;}
-.zx-title-block { height: 82px; }
-.zx-title-name { width: 177px; height: 82px; }
+.zx-title-block { height: 82px;width:1230px;}
+.zx-title-name{ width: 177px; height: 82px;float:left;}
 .zx-title-name span { float: left; font-size: 12px; margin: 37px 0 0 6px; }
 .zx-title-name h4 { float: left; font-size: 22px; line-height: 82px; }
 .zx-goods-block { height: 313px; }
@@ -109,3 +97,11 @@
 #LoutiNav ul li.last {background: darkred;color: white;border-bottom: none;}
 #LoutiNav ul li:hover{background: darkred;color: white;}
 .louactive{background: darkred;}
+/*配件more*/
+.zx-title-more{width:281px;height:79px;float:right;line-height:79px;}
+.zx-title-more ul{float:left;}
+.zx-title-more ul li{float:left;height:82px;padding-bottom: 2px;text-align: center;margin-right: 23px;padding: 0 5px;}
+.zx-title-more a{float:left;color: #767676;}
+.zx-title-more a span{float:left;}
+.zx-title-more a img{float:left;margin-top:33px;}
+.zx-title-more ul .zxactive a{color:#fc6628;border-bottom: 3px solid #fc6628;}

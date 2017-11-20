@@ -43,9 +43,99 @@ $(".navtab li").click(function(){
 			.siblings()
 			.removeClass("tabactive")
 })
+var n = 0;
+var count = 0 ;
+//判断用户数据是否存在，即用户是否登录
+if(document.cookie){
+	var flag = null ;
+	
+	for(var i = 0 ; i <document.cookie.length ; i++){
+		if(document.cookie[i] == ";"){
+			count++;
+		}
+	}
+	
+	for(var i = 0 ; i <document.cookie.length ; i++){
 
+		if(document.cookie[i] == ";"){
+		
+			flag = true ;
+			var cootr = document.cookie;
+			var reg = new RegExp("; ","g")
+			var brr  = cootr.replace(reg,"=");	
+			var arr  = brr.split("=");
+			console.log(brr)
+			for(var j = 0 ; j < arr.length ; j++){
+				
+				if(arr[j] == "userlist"){
+					m = j ;
+					
+				}
+				if(arr[j] == "shoplist"+count){
+					n = j ;
+				}
+			}
+			var usname = JSON.parse(arr[m+1]).username;
+			title = JSON.parse(arr[n+1]).title;
+			src = JSON.parse(arr[n+1]).src;
+			price = JSON.parse(arr[n+1]).price;
+			alt = JSON.parse(arr[n+1]).alt;
+			ysjgwc();
+			
+			$(".is-login").css("display","block")
+			$(".is-login .usname").html(usname);
+			$(".hidden").css("display","none");
+			
+			break;
+		}
+	}
+	if( i == document.cookie.length){
+		flag = false;
+		var cootr = document.cookie;
+		var arr= cootr.split("=");
+		var usname = JSON.parse(arr[1]).username;
+		$(".is-login").css("display","block");
+		$(".is-login .usname").html(usname);
+		$(".hidden").css("display","none");
+	}
+}
+function ysjgwc(){
+	var dtr = "" ;
+	dtr = `<li>
+				<a href="page.html" class="shopfull" target="_blank">
+					<div class="shopfullimg">
+						<img src="img/${src}"/>
+					</div>
+					<div class="shopfullname">
+						${title}
+						<br />
+						${alt}
+					</div>
+				</a>
+				<div class="shopprice">
+					<div class="shopfullpre">
+						<span>￥${price}</span>
+					</div>
+					<div class="shopfullrem">
+						<a href="#">删除</a>
+					</div>
+				</div>
+			</li>`;
+	$(".fulllist").append( dtr );
+}
+$(".is-login").mouseenter(function(){
+	$(".dropdown-menu").css("display","block")
+}).mouseleave(function(){
+	$(".dropdown-menu").css("display","none")
+})
+$(".dropdown-menu li:last").click(function(){
+	$(".is-login").css("display","none")
+	$(".hidden").css("display","block");
+})
 //获取主页数据
 window.onload = function(){
+	
+	console.log(document.cookie)
 	//http://127.0.0.1/myzte/page.html?pid=shop01&cname=classify001
 	//获取路径信息
 	var str = location.href;
@@ -67,7 +157,7 @@ window.onload = function(){
 			//获取商品信息
 			var html = "";
 			//加入购物车时获取信息
-			
+//			var ktr = "" ;
 			//确定操作的数组  json[cname].list
 			for( var i = 0 ; i < json[cname].list.length ; i++ ){
 				var pro = json[cname].list[i];//每一个商品
@@ -83,13 +173,35 @@ window.onload = function(){
 								<span>￥<strong>${pro.price}</strong></span>
 								<del>￥${pro.oldprice}</del>
 							</div>`;
-					
+					/*ktr += `<li>
+								<a href="page.html" class="shopfull" target="_blank">
+									<div class="shopfullimg">
+										<img src="img/${pro.src}"/>
+									</div>
+									<div class="shopfullname">
+										${pro.title}
+										<br />
+										${pro.alt}
+									</div>
+								</a>
+								<div class="shopprice">
+									<div class="shopfullpre">
+										<span>￥${pro.price}</span>
+									</div>
+									<div class="shopfullrem">
+										<a href="#">删除</a>
+									</div>
+								</div>
+							</li>`;*/
 					break;
 				}
 			}
 			$(".all-block").prepend( html );
+//			$(".fulllist").append( ktr );
+
 		}
 	});
+	
 }
 
 
@@ -130,13 +242,6 @@ $(".pic-list ul").find("li").mouseenter(function(){
 			.css("border",0)
 })
 //放大镜
-/*$(".bigimg img").mouseover(function(){
-	$(".zzc").css("display","block");
-	$(".bigimg img").eq(index)
-					.show()
-					.siblings()
-					.hide();
-})*/
 $(".bigimg").mouseover(function(){
 	$(".zzc").css("display","block");
 	$(".bigimg img").eq(index)
@@ -167,14 +272,52 @@ $(".bigimg").mouseover(function(){
 	})
 })
 $(".buycar").click(function(){
-		var str = location.href;
-		//如果路径没有参数   ？   就说明没有传递数据
-		if( str.indexOf( "?" ) == -1){
-			return;
-		}
-		str = str.split("?")[1];//"pid=shop01&cname=classify001"
-		var arr = str.split("&");//["pid=shop01","cname=classify001"]
-		var pid = arr[0].split("=")[1];
-		var cname = arr[1].split("=")[1];
-		location.href = "http://127.0.0.1/myzte/addtoCart.html?pid="+pid+"&cname="+cname;	
-	})
+	var str = location.href;
+	//如果路径没有参数   ？   就说明没有传递数据
+	if( str.indexOf( "?" ) == -1){
+		return;
+	}
+	str = str.split("?")[1];//"pid=shop01&cname=classify001"
+	var arr = str.split("&");//["pid=shop01","cname=classify001"]
+	var pid = arr[0].split("=")[1];
+	var cname = arr[1].split("=")[1];
+	location.href = "http://127.0.0.1/myzte/addtoCart.html?pid="+pid+"&cname="+cname;	
+})
+//判断购物车是否有商品，没有显示null版块，有则显示full版块
+/*$(".isgwc").mouseover(function(){
+	$(".shopcart-null").css("display","block");
+}).mouseout(function(){
+	$(".shopcart-null").css("display","none");
+})*/
+//判断购物车有多少件商品,显示数字
+var numb = $(".fulllist").find("li").length;
+$(".cartcount").html(numb);
+if(numb == 0){
+	$(".cartcount").css("display","none");
+}
+//top版块购物车商品删除
+$(".shopfullrem").mouseenter(function(){
+	$(this).find("a").css("color","#333");
+	console.log($(this).index())
+}).mouseleave(function(){
+	$(this).find("a").css("color","#787878");
+}).click(function(){
+	$(this).parent().parent().remove();
+	numb--;
+	$(".cartcount").html(numb);
+	if(numb == 0){
+		$(".cartcount").css("display","none");
+	}
+})
+//判断购物车是否有商品，没有显示null版块，有则显示full版块
+$(".isgwc").mouseover(function(){
+	if(numb == 0){
+		$(".shopcart-null").css("display","block");
+	}else{
+		$(".shopcart-full").css("display","block");
+		$(".shopcart-null").css("display","none");
+	}
+}).mouseout(function(){
+	$(".shopcart-null").css("display","none");
+	$(".shopcart-full").css("display","none");
+})
