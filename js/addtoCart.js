@@ -1,7 +1,7 @@
 $("#foot_wrap").load("public.html #publ");
 
 //判断用户数据是否存在，即用户是否登录
-if(document.cookie){
+if(document.cookie.length>9){
 	var s= 1 ;
 	var flag = null ;
 	for(var i = 0 ; i <document.cookie.length ; i++){
@@ -44,9 +44,11 @@ if(document.cookie){
 		$(".hidden").css("display","none");
 	}
 	console.log(flag)
+}else{
+	$("#sontainer").css("display","block");
+	$("#container").css("display","none");
 }
 function ysjgwc(){
-	
 	var dtr = "" ;
 	dtr += `<li>
 				<a href="page.html" class="shopfull" target="_blank">
@@ -161,9 +163,9 @@ window.onload = function(){
 		
 	});
 }
+fengz()
 //判断购物车有多少件商品,显示数字
-	
-	function fengz(){
+	/*function fengz(){
 		var numb = $(".fulllist").find("li").length;
 		$(".cartcount").html(numb);
 		if(numb == 0){
@@ -194,4 +196,4 @@ window.onload = function(){
 			$(".shopcart-null").css("display","none");
 			$(".shopcart-full").css("display","none");
 		})
-	}
+	}*/

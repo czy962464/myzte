@@ -185,9 +185,6 @@ function ysjgwc(){
 	var jjson = {"username":17862981182};
 	document.cookie = "userlist=" + JSON.stringify( jjson ) + ";expires=" + now;
 	//判断用户数据是否存在，即用户是否登录
-
-
-
 	$(".is-login").mouseenter(function(){
 		$(".dropdown-menu").css("display","block")
 	}).mouseleave(function(){
@@ -196,6 +193,7 @@ function ysjgwc(){
 	$(".dropdown-menu li:last").click(function(){
 		$(".is-login").css("display","none")
 		$(".hidden").css("display","block");
+		document.cookie = "userlist=;expires=-1";
 	})
 	//轮播图
 	var timer = null ;
@@ -244,37 +242,9 @@ function ysjgwc(){
 	$(".banner").mouseleave(function(){
 		timer = setInterval(autoPlay ,2000);
 	})
-	//判断购物车有多少件商品,显示数字
-	var numb = $(".fulllist").find("li").length;
-	$(".cartcount").html(numb);
-	if(numb == 0){
-		$(".cartcount").css("display","none");
-	}
-	//top版块购物车商品删除
-	$(".shopfullrem").mouseenter(function(){
-		$(this).find("a").css("color","#333");
-	}).mouseleave(function(){
-		$(this).find("a").css("color","#787878");
-	}).click(function(){
-		$(this).parent().parent().remove();
-		numb--;
-		$(".cartcount").html(numb);
-		if(numb == 0){
-			$(".cartcount").css("display","none");
-		}
-	})
-	//判断购物车是否有商品，没有显示null版块，有则显示full版块
-	$(".isgwc").mouseover(function(){
-		if(numb == 0){
-			$(".shopcart-null").css("display","block");
-		}else{
-			$(".shopcart-full").css("display","block");
-			$(".shopcart-null").css("display","none");
-		}
-	}).mouseout(function(){
-		$(".shopcart-null").css("display","none");
-		$(".shopcart-full").css("display","none");
-	})
+//右上角购物车
+	fengz();
+	
 	
 $(".zx-title-more ul li").mouseenter(function(){
 	$(this).addClass("zxactive")

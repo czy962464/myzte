@@ -46,15 +46,13 @@ $(".navtab li").click(function(){
 var n = 0;
 var count = 0 ;
 //判断用户数据是否存在，即用户是否登录
-if(document.cookie){
+if(document.cookie.length>9){
 	var flag = null ;
-	
 	for(var i = 0 ; i <document.cookie.length ; i++){
 		if(document.cookie[i] == ";"){
 			count++;
 		}
 	}
-	
 	for(var i = 0 ; i <document.cookie.length ; i++){
 
 		if(document.cookie[i] == ";"){
@@ -173,32 +171,10 @@ window.onload = function(){
 								<span>￥<strong>${pro.price}</strong></span>
 								<del>￥${pro.oldprice}</del>
 							</div>`;
-					/*ktr += `<li>
-								<a href="page.html" class="shopfull" target="_blank">
-									<div class="shopfullimg">
-										<img src="img/${pro.src}"/>
-									</div>
-									<div class="shopfullname">
-										${pro.title}
-										<br />
-										${pro.alt}
-									</div>
-								</a>
-								<div class="shopprice">
-									<div class="shopfullpre">
-										<span>￥${pro.price}</span>
-									</div>
-									<div class="shopfullrem">
-										<a href="#">删除</a>
-									</div>
-								</div>
-							</li>`;*/
 					break;
 				}
 			}
 			$(".all-block").prepend( html );
-//			$(".fulllist").append( ktr );
-
 		}
 	});
 	

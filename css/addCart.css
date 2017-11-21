@@ -34,12 +34,12 @@
 #nav .box ul li:nth-child(3) .nav-img{border:0}
 
 /*内容区:未买商品时*/
-#container{padding:120px 0;}
-.blankcart{width:960px;margin:0 auto;height:100px;}
-.blankcart .cartimg{width:400px;float:left;}
-.blankcart .cartimg img{margin-left:276px;}
-.blankcart .carttext{width:25%;float:left;padding:0 15px;height:100%;}
-.blankcart .carttext h3{font-size:22px;margin-top:20px;margin-bottom:10px;}
-.blankcart .carttext p{font-size:16px;}
-.blankcart .cartbtn{width:30%;float:left;height:100%;text-align:center;}
-.blankcart .cartbtn a{margin:30px 0 15px ;display:block;color:#fff;height: 36px;background-color: #fc6822;line-height: 36px;width: 110px;border-radius: 2px;font-size: 12px;}
+#sontainer{padding:120px 0;}
+#sontainer .blankcart{width:960px;margin:0 auto;height:100px;}
+#sontainer .blankcart .cartimg{width:400px;float:left;}
+#sontainer .blankcart .cartimg img{margin-left:276px;}
+#sontainer .blankcart .carttext{width:25%;float:left;padding:0 15px;height:100%;}
+#sontainer .blankcart .carttext h3{font-size:22px;margin-top:20px;margin-bottom:10px;}
+#sontainer .blankcart .carttext p{font-size:16px;}
+#sontainer .blankcart .cartbtn{width:30%;float:left;height:100%;text-align:center;}
+#sontainer .blankcart .cartbtn a{margin:30px 0 15px ;display:block;color:#fff;height: 36px;background-color: #fc6822;line-height: 36px;width: 110px;border-radius: 2px;font-size: 12px;}
