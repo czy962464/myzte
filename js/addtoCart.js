@@ -146,19 +146,26 @@ window.onload = function(){
 			}
 			
 			$(".addtocart").prepend( ctr );
-			$(".fulllist").append( dtr );
-			fengz();
+		
+			
 			$(".default").click(function(){
-				location.replace("page.html?pid="+bid+"&cname="+bname);
+				location.href = "page.html?pid="+bid+"&cname="+bname;
 			})
-			alert($(".fulllist").find("li").length)
+			
 			
 			shopjson.src = mation.src ;
 			shopjson.title = mation.title ;
 			shopjson.alt = mation.alt ;
 			shopjson.price = mation.price ;
+			var reg = new RegExp("userlist","g");
+			if(reg.test(document.cookie)){
+				alert($(".fulllist").find("li").length)
+				$(".fulllist").append( dtr );
+				fengz();
+				document.cookie = "shoplist"+s+"=" + JSON.stringify( shopjson ) + ";expires=" + now;
+			}
+
 			
-			document.cookie = "shoplist"+s+"=" + JSON.stringify( shopjson ) + ";expires=" + now;
 		}
 		
 	});

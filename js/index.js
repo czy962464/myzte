@@ -180,10 +180,10 @@ function ysjgwc(){
 			}
 		})
 	}
-	var now = new Date();
+	/*var now = new Date();
 		now.setDate( now.getDate() + 1 );
 	var jjson = {"username":17862981182};
-	document.cookie = "userlist=" + JSON.stringify( jjson ) + ";expires=" + now;
+	document.cookie = "userlist=" + JSON.stringify( jjson ) + ";expires=" + now;*/
 	//判断用户数据是否存在，即用户是否登录
 	$(".is-login").mouseenter(function(){
 		$(".dropdown-menu").css("display","block")

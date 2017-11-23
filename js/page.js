@@ -259,12 +259,7 @@ $(".buycar").click(function(){
 	var cname = arr[1].split("=")[1];
 	location.href = "http://127.0.0.1/myzte/addtoCart.html?pid="+pid+"&cname="+cname;	
 })
-//判断购物车是否有商品，没有显示null版块，有则显示full版块
-/*$(".isgwc").mouseover(function(){
-	$(".shopcart-null").css("display","block");
-}).mouseout(function(){
-	$(".shopcart-null").css("display","none");
-})*/
+
 //判断购物车有多少件商品,显示数字
 var numb = $(".fulllist").find("li").length;
 $(".cartcount").html(numb);

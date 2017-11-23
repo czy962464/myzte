@@ -25,7 +25,11 @@ $(".yz").blur(function(){
 });
 
 $("form").submit(function(){
-	if( flagYz && login_yz()){
+	if(document.cookie.length==0){
+		$(".pduan").html("用户名不存在,请注册");
+		pduan();
+		return false;
+	}else if( flagYz && login_yz()){
 		var json1 = {};
 		json1.username = $(".use").val();
 		json1.userpwd = $(".pwd").val();
